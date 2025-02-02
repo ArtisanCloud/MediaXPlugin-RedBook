@@ -1,4 +1,4 @@
-module github.com/ArtisanCloud/MediaXPlugin
+module github.com/ArtisanCloud/MediaXPlugin-RedBook
 
 go 1.18
 

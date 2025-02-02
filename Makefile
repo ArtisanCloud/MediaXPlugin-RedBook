@@ -1,13 +1,7 @@
-plugin.all.build: plugin.pluginA.build plugin.pluginB.build
+plugin.all.build: plugin.redBook.build
 
-.PHONY: plugin.pluginA.build
-plugin.pluginA.build:
-	@echo "正在构建pluginA插件..."
-	go build -o plugins/pluginA.so -buildmode=plugin src/pluginA.go
-	@echo "pluginA插件构建完成"
-
-.PHONY: plugin.pluginB.build
-plugin.pluginB.build:
-	@echo "正在构建pluginB插件..."
-	go build -o plugins/pluginB.so -buildmode=plugin src/pluginB.go
-	@echo "pluginB插件构建完成"
+.PHONY: plugin.redBook.build
+plugin.redBook.build:
+	@echo "正在构建redBook插件..."
+	go build -o plugins/redBook.so -buildmode=plugin src/redBook.go
+	@echo "redBook插件构建完成"
